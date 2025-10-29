@@ -6,4 +6,9 @@
 
 {% block content %}
     <h1>Shop page</h1>
+    {% for item in all_products %}
+        <h3>{{ item.name }}</h3>
+        <p>Price: ${{ item.price }}</p>
+        <p>{{ item.description }}</p>
+    {% endfor %}
 {% endblock %}
