@@ -10,7 +10,8 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="shortcut icon" href="images/favicon.png" type="">
+    <!-- <link rel="shortcut icon" href="images/favicon.png" type=""> -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="">
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -45,9 +46,10 @@
           <img src="images/hero-bg.jpg" alt="">
         </div>
         {% include 'include/header.html' %}
-
     </div>
 
     {% block content %}{% endblock %}
+
+    {% include 'include/footer.html' %}
 </body> 
 </html>
